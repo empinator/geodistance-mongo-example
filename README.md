@@ -8,6 +8,7 @@ Inspired by:
 Original MySQL-Data from OpenGeoDB (opengeodb.org):
 http://www.fa-technik.adfc.de/code/opengeodb/dump/
 
+## Steps
 
 Import collection to MongoDB:
 
