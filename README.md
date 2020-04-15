@@ -1,6 +1,10 @@
 # geodistance-mongo-example
 how to setup a mongo collection and search places by distance (in Germany)
 
+Inspired by:
+- https://docs.mongodb.com/manual/tutorial/geospatial-tutorial/
+- http://opengeodb.org/wiki/OpenGeoDB_-_Umkreissuche
+
 Original MySQL-Data from OpenGeoDB (opengeodb.org):
 http://www.fa-technik.adfc.de/code/opengeodb/dump/
 
@@ -21,7 +25,7 @@ db.getCollection('zipcodes').find({
    })
 ```
       
-Example, find every town within a 10km radious around Frankfurt(Main)
+Example to find every town within a 10km radius around Frankfurt(Main)
 
 ```
 db.getCollection('zipcodes').find({ 
