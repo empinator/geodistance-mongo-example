@@ -15,14 +15,16 @@ Create Index:
 
 Query by distance:
 
-```db.getCollection('zipcodes').find({ 
+```
+db.getCollection('zipcodes').find({ 
        loc: { $geoWithin: { $centerSphere: [ [<lat>,<lng>], <km> / 1.6 / 3963.2 ] } } 
    })
 ```
       
 Example, find every town within a 10km radious around Frankfurt(Main)
 
-```db.getCollection('zipcodes').find({ 
+```
+db.getCollection('zipcodes').find({ 
        loc: { $geoWithin: { $centerSphere: [ [50.1167,8.68333], 10 / 1.6 / 3963.2 ] } } 
    })
 ```
