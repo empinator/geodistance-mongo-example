@@ -38,4 +38,5 @@ AND   gl.loc_type IN ( 100600000 /* pol. Gliederung */, 100700000 /* Ortschaft *
 Export zip_coordinates as JSON through MySQL Workbench
 
 In your new JSON File replace the coordinate properties with an object:
-```$ sed -i s/"zc_lat":(.+), "zc_lon":(.+)},\n/"loc":{ type:"Point", coordinates: [\1,\2] }},\n/g geodb_zipcodes.json```
+
+```$ sed -i 's/"zc_lat":(.+), "zc_lon":(.+)},\n/"loc":{ type:"Point", coordinates: [\1,\2] }},\n/g' geodb_zipcodes.json```
