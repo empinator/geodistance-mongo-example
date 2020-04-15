@@ -1,5 +1,5 @@
 
-Download Data from open http://opengeodb.org: http://www.fa-technik.adfc.de/code/opengeodb/
+Download latest data from open opengeodb: http://www.fa-technik.adfc.de/code/opengeodb/
 
 import into MySQL-Database
 
